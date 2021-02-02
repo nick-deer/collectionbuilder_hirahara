@@ -24,7 +24,7 @@ featured-locations-max: 3
 #
 # Featured image on About page - if left blank, CB will use image featured on the home page
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: demo_psychiana565
+about-featured-image: coll886
 
 ##########
 # BROWSE PAGE
@@ -84,8 +84,8 @@ metadata-facets-fields: "subject,creator,format"
 # ADVANCED OPTIONS
 #
 # CDM image % for IIIF
-image-percentage-large: 50 # default 70
-image-percentage-medium: 30 # default 40 
+image-percentage-large: 30 # default 70
+image-percentage-medium: 20 # default 40 
 image-percentage-small: 10 # default 20
 
 # NAVBAR COLORS
