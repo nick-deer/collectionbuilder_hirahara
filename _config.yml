@@ -55,6 +55,13 @@ page_gen:
     filter: 'objectid'  
 
 ##########
+# IMAGE SETTINGS
+
+image-percentage-large: 50
+image-percentage-medium: 30
+image-percentage-small: 10
+
+###########
 # GOOGLE SERVICES [optional!]
 #
 # leave these blank or comment out to NOT include google code. See docs/google.md
