@@ -84,9 +84,9 @@ metadata-facets-fields: "subject,creator,format"
 # ADVANCED OPTIONS
 #
 # CDM image % for IIIF
-image-percentage-large: 30 # default 70
-image-percentage-medium: 20 # default 40 
-image-percentage-small: 10 # default 20
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
 
 # NAVBAR COLORS
 # navbar text color
@@ -99,7 +99,7 @@ navbar-background: bg-light
 # BOOTSWATCH THEMES
 # You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bootswatch: litera # leave blank or comment out for plain bootstrap
+bootswatch: lux # leave blank or comment out for plain bootstrap
 
 # THEME FONTS
 base-font-size: 1.2em
