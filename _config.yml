@@ -43,7 +43,7 @@ metadata: hirahara
 # contentdm collection name, matches collection ID used by CDM
 cdm-collection-id: hiraharag # not sure this is the cdm collection id, check with Alex
 # CONTENTdm server url
-cdm-url: https://content.libraries.wsu.edu/digital/
+cdm-url: https://cdm16866.contentdm.oclc.org
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
