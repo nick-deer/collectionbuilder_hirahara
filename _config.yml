@@ -8,9 +8,9 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: https://www.lib.uidaho.edu
+url: https://libraries.wsu.edu/
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: /demo/psychiana
+baseurl: /hirahara
 # location of code, the full url to your github repository
 source-code: https://github.com/NikiJD/collectionbuilder_hirahara
 
@@ -53,13 +53,6 @@ page_gen:
     dir: 'items'
     extension: 'html' 
     filter: 'objectid'  
-
-##########
-# IMAGE SETTINGS
-
-image-percentage-large: 50
-image-percentage-medium: 30
-image-percentage-small: 10
 
 ###########
 # GOOGLE SERVICES [optional!]
