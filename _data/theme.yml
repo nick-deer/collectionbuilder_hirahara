@@ -11,7 +11,7 @@
 featured-image: coll886
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: 800 # in px, but don't include the "px"; default is 450.
+carousel-height: # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
@@ -84,8 +84,8 @@ metadata-facets-fields: "subject,creator,format"
 # ADVANCED OPTIONS
 #
 # CDM image % for IIIF
-image-percentage-large: # default 70
-image-percentage-medium: # default 40 
+image-percentage-large: 40 # default 70
+image-percentage-medium: 30 # default 40 
 image-percentage-small: # default 20
 
 # NAVBAR COLORS
