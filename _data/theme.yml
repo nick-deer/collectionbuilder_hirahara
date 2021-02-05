@@ -84,7 +84,7 @@ metadata-facets-fields: "subject,creator,format"
 # ADVANCED OPTIONS
 #
 # CDM image % for IIIF
-image-percentage-large: 50 # default 70
+image-percentage-large: 40 # default 70
 image-percentage-medium: 30 # default 40 
 image-percentage-small: # default 20
 
