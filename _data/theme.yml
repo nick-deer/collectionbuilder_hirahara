@@ -91,7 +91,7 @@ image-percentage-small: # default 20
 # NAVBAR COLORS
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
-navbar-color: navbar-light
+navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
 navbar-background: bg-light
