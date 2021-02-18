@@ -8,7 +8,7 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: https://nikijd.github.io
+url: http://127.0.0.1:4000/hirahara/
 # path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: /hirahara
 # location of code, the full url to your github repository
