@@ -8,9 +8,9 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: http://127.0.0.1:4000/
+url: # left blank to test out Render deployment # http://127.0.0.1:4000/ 
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: /hirahara
+baseurl: # left blank to test out Render deployment # /hirahara
 # location of code, the full url to your github repository
 source-code: https://github.com/NikiJD/collectionbuilder_hirahara
 
@@ -30,7 +30,7 @@ keywords: # TODO
 author: NikiJD
 # Organization branding
 organization-name: "WSU Libraries Digital Collections"
-organization-link: https://content.libraries.wsu.edu/digital/
+organization-link: # TODO put this in
 organization-logo-banner: # TODO put this in
 organization-logo-nav: # TODO put this in
 
