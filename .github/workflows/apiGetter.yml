@@ -26,7 +26,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run api getter script
         run: |
-          echo first command,
+          npm install node-fetch
           node ./ApiGetter.js
         shell: bash
           
