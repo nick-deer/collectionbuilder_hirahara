@@ -27,6 +27,6 @@ jobs:
       - name: Run api getter script
         run: |
           npm install node-fetch
-          node ./ApiGetter.js
+          node ./ApiGetter.cjs
         shell: bash
           
