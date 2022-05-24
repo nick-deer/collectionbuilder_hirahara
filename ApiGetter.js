@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 const fs = require('fs');
 
 fetch('http://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmGetCollectionArchivalInfo/hiraharag/json')
