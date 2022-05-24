@@ -12,4 +12,4 @@ description: 'Grab data at CONTENTdm API endpoint'
     #description: 'The time we greeted you'
 runs:
   using: 'node16'
-  main: 'ApiGetter.cjs'
+  main: 'ApiGetter.js'
