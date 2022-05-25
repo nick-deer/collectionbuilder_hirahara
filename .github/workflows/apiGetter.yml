@@ -23,4 +23,5 @@ jobs:
         
       - name: Run api getter script
         run: sudo ../../ApiGetter.cjs
+        shell: bash
           
