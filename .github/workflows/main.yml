@@ -6,4 +6,4 @@ jobs:
   checkout:
     uses: ./.github/workflows/checkout.yml
   api-get:
-    uses: ./.github/workflows/apiGetAction.yml
+    uses: ./.github/workflows/apiGetWorkflow.yml
