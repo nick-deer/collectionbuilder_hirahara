@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  api-get:
+    runs-on: ubuntu-latest
+    name: Gets CONTENTdm data from api.
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Api get action step
+        uses: ./ # Uses an action in the root directory
+        id: apiGet
