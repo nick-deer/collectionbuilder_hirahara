@@ -4,6 +4,6 @@ on: [push]
 
 jobs:
   checkout:
-    uses: .github/workflows/checkout.yml@v1
+    uses: ./.github/workflows/checkout.yml
   api-get:
-    uses: .github/workflows/apiGetWorkflow.yml@v1
+    uses: ./.github/workflows/apiGetWorkflow.yml
