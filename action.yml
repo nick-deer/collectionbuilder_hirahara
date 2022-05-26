@@ -1,0 +1,5 @@
+name: 'Get data'
+description: 'Get data from CONTENTdm'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
