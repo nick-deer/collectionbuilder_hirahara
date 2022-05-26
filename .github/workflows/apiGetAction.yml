@@ -1,5 +1,0 @@
-name: 'Api-Get Action'
-description: 'Action to get data from CONTENTdm API'
-runs:
-  using: 'node16'
-  main: 'index.js'
