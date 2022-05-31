@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: ../../action.yml@v1
-      - run: echo "Done."
+        uses: ./action.yml@v1
+      - run: echo "done"
         shell: bash
