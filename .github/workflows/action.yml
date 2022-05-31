@@ -1,0 +1,16 @@
+name: 'Get CONTENTdm data'
+description: 'Get data from CONTENTdm API.'
+inputs:
+outputs:
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo curl -X GET –header Content-Type: application/json’ \
+        –header ‘Accept:application/json’  \
+        http://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmGetCollectionArchivalInfo/hiraharag/json \
+        > ./result.json
+      shell: bash
+      run: echo "api get complete."
+      shell: bash
+      
