@@ -1,9 +1,12 @@
-name: Get CONTENTdm data.
-
 on: [push]
 
 jobs:
-  checkout:
-    uses: ./.github/workflows/checkout.yml
   api-get:
-    uses: ./.github/workflows/apiGetWorkflow.yml
+    runs-on: ubuntu-latest
+    name: Checkout repo and grab api data.
+    steps:
+      - uses: actions/checkout@v3
+      - id: checkout
+        uses: ./action.yml
+      - run: echo "Done."
+        shell: bash
