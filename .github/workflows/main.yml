@@ -5,8 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Checkout repo and grab api data.
     steps:
-      - uses: actions/checkout@v3
-      - id: foo
-        uses: ./.github/workflows/action.yml
-      - run: echo "done"
-        shell: bash
+      - name: API Grabber
+        uses: ThatTimothy/api-grabber@v1.0.0
