@@ -1,5 +1,7 @@
 name: 'Get CONTENTdm data'
 description: 'Get data from CONTENTdm API.'
+inputs:
+outputs:
 
 runs:
   using: "composite"
