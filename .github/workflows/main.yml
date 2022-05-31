@@ -6,7 +6,7 @@ jobs:
     name: Checkout repo and grab api data.
     steps:
       - uses: actions/checkout@v3
-      - id: checkout
-        uses: action.yml@v1
+      - id: foo
+        uses: ../../action.yml@v1
       - run: echo "Done."
         shell: bash
