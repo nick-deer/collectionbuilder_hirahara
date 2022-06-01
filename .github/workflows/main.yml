@@ -3,7 +3,7 @@ on: [push]
 jobs:
   api-get:
     runs-on: ubuntu-latest
-    name: Checkout repo and grab api data.
+    name: Grab api data.
     steps:
       - name: API Grabber
         uses: ThatTimothy/api-grabber@v1.0.0
