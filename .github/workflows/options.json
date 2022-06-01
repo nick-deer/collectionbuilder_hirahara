@@ -1,0 +1,12 @@
+{
+    "result.json": [
+        {
+            "url": "https://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmQuery/senex/0/0/nosort/1024/10/0/0/0/json",
+            "values": {
+                "rawData": {
+                    "storeAs": "string"
+                },
+            }
+        }
+    ]
+}
