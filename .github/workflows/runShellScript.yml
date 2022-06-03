@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  api-get:
+    runs-on: ubuntu-latest
+    name: Grab api data.
+    steps:
+        run: ./.github/workflows/apiGet.sh
+        shell: bash
