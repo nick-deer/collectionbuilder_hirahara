@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Call CONTENTdm api
         run: |
-          curl --location --request GET 'https://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmQuery/senex/0/0/nosort/1024/10/0/0/0/json' --header 'Content-Type: application/json'
-      - name: Download api data to repo
+          curl --location --request GET 'https://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmQuery/senex/0/0/nosort/1024/10/0/0/0/json' --header 'Content-Type: application/json' > result.json
+      - name: Upload api data as artifact
         uses: actions/upload-artifact@v3
         with:
           name: result
