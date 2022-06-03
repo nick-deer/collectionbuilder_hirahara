@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  api-slurp-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: api slurp step
+        run: |
+          curl --location --request GET 'https://content.libraries.wsu.edu/digital/bl/dmwebservices/index.php?q=dmQuery/senex/0/0/nosort/1024/10/0/0/0/json' --header 'Content-Type: application/json' > result.json
+        shell: bash
