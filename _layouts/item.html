@@ -19,7 +19,9 @@ gallery: true
                     
                     <p><small>Click to view full screen</small></p>
                 </div>
-                <p><img src="{% include image/iiif-viewer.html %}"</p>
+                
+                {% include image/iiif-viewer.html %}
+                
                 {%- else -%}
                 <div class="mt-4">
                     <p>
