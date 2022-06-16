@@ -4,6 +4,6 @@
 <script type="text/javascript">
     var viewer = OpenSeadragon({
         id: "openseadragon1",
-        tileSources: {{ image_url }}
+        tileSources: {{ image_url | jsonify }}
     });
 </script>
