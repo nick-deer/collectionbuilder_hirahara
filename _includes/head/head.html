@@ -6,6 +6,17 @@
 <meta name="generator" content="collectionbuilder-contentdm" />
 <meta http-equiv="Content-Language" content="en-us" >
 
+{% capture image_url %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}/full/pct:{{ site.data.theme.image-percentage-large | default: '70' }}/0/default.jpg{% endcapture %}
+<script src="../../openseadragon-bin-3.1.0/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        tileSources: [
+          {{ image_url }}
+        ]
+    });
+</script>
+
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{%- endif -%}
 <link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ '/assets/lib/bootstrap.min.css' | absolute_url }}{% endif %}" type="text/css">
 <script defer src="{{ '/assets/lib/fontawesome-free/js/all.min.js' | absolute_url }}"></script>
