@@ -1,11 +1,2 @@
 {% capture image_url %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}/full/pct:{{ site.data.theme.image-percentage-large | default: '70' }}/0/default.jpg{% endcapture %}
 <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
-<script src="../../openseadragon-bin-3.1.0/openseadragon.min.js"></script>
-<script type="text/javascript">
-    var viewer = OpenSeadragon({
-        id: "openseadragon1",
-        tileSources: [
-          {{ image_url }}
-        ]
-    });
-</script>
