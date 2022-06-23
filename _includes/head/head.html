@@ -11,9 +11,17 @@
 <script type="text/javascript">
     var viewer = OpenSeadragon({
         id: "openseadragon1",
-        tileSources: [
-          {{ image_url }}
-        ]
+        tileSources:   [{
+          "@context": "http://iiif.io/api/image/2/context.json",
+          "@id": {{ image_url }},
+          "height": 7200,
+          "width": 5233,
+          "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+          "protocol": "http://iiif.io/api/image",
+          "tiles": [{
+            "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+            "width": 1024
+      }]
     });
 </script>
 
