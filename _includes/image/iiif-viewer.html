@@ -1,13 +1,15 @@
 <div id="openseadragon1" style="width: 800px; height: 1050px;"></div>
 
-{% capture image_info %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}/info.json{% endcapture %}
+{% capture image_base_uri %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}{% endcapture %}
+{% capture image_info %} {{ image_uri_base }}/info.json{% endcapture %}
+
 <script type="text/javascript">
     OpenSeadragon({
         id: "openseadragon1",
         prefixUrl: "../../openseadragon-bin-3.1.0/images/",
         tileSources:   [{
           "@context": "http://iiif.io/api/image/2/context.json",
-          "@id": "{{ image_info }}",
+          "@id": "{{ image_base_uri }}",
           "height": 1050,
           "width": 800,
           "profile": [
