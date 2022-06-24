@@ -6,25 +6,7 @@
 <meta name="generator" content="collectionbuilder-contentdm" />
 <meta http-equiv="Content-Language" content="en-us" >
 
-{% capture image_url %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}/full/pct:{{ site.data.theme.image-percentage-large | default: '70' }}/0/default.jpg{% endcapture %}
 <script src="../../openseadragon-bin-3.1.0/openseadragon.min.js"></script>
-<script type="text/javascript">
-    var viewer = OpenSeadragon({
-        id: "openseadragon1",
-        tileSources:   [{
-          "@context": "http://iiif.io/api/image/2/context.json",
-          "@id": "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000001.jp2",
-          "height": 7200,
-          "width": 5233,
-          "profile": [ "http://iiif.io/api/image/2/level2.json" ],
-          "protocol": "http://iiif.io/api/image",
-          "tiles": [{
-            "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
-            "width": 1024
-            }]
-        }]
-    });
-</script>
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{%- endif -%}
 <link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ '/assets/lib/bootstrap.min.css' | absolute_url }}{% endif %}" type="text/css">
