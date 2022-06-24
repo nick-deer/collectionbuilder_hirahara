@@ -1,7 +1,7 @@
 <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
 
 {% capture image_info %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}/info.json{% endcapture %}
-
+{{ image_info }} 
 <script type="text/javascript">
     OpenSeadragon({
         id: "openseadragon1",
