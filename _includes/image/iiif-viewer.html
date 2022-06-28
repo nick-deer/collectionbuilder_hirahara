@@ -1,6 +1,6 @@
 <div id="openseadragon1" style="width: 800px; height: 1050px;"></div>
 
-{% capture image_base_uri %} {{ site.cdm-url }}/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}{% endcapture %}
+{% capture image_base_uri %} https://content.libraries.wsu.edu/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}{% endcapture %}
 {% capture image_info %} {{ image_uri_base }}/info.json{% endcapture %}
 
 <script type="text/javascript">
@@ -16,41 +16,6 @@
             "http://iiif.io/api/image/2/level1.json"
           ],
           "protocol": "http://iiif.io/api/image",
-          "tiles": [
-            {
-              "scaleFactors": [
-                1,
-                2,
-                4,
-                8,
-                16
-              ],
-              "width": 1024
-            }
-          ],
-          "sizes": [
-            {
-              "width": 800,
-              "height": 1050
-            },
-            {
-              "width": 400,
-              "height": 525
-            },
-            {
-              "width": 200,
-              "height": 263
-            },
-            {
-              "width": 100,
-              "height": 131
-            },
-            {
-              "width": 50,
-              "height": 66
-            }
-          ]
-        }],
-        debugMode:  true
+          "tiles": 
     });
 </script>
