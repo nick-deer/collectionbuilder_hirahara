@@ -11,13 +11,12 @@ gallery: true
     </ul>
 
     <div class="row">
-        {% include image/iiif-viewer.html %}
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
-                <div class="gallery-img" data-src="{% include image/original.html %}">
+                <div class="gallery-img" data-src="{% include image/iiif-viewer.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
-                    <p><small><a href="image/iiif-viewer.html">Click to view full screen</a></small></p>
+                    <p><small>Click to view full screen</small></p>
                 </div>
                 
                 {%- else -%}
