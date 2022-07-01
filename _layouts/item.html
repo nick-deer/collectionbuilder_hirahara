@@ -17,8 +17,14 @@ gallery: true
                 {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/large.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
-                    <p><small>Click to view full screen</small></p>
                 </div>
+                <style>
+                    .hidden {
+                        visibility: hidden;
+                    }
+                </style>
+                
+                <p><small><a href="#" onclick="event.preventDefault(); document.getElementsByClassName('viewer')[0].classList.toggle('hidden');">Click to view full screen</a></small></p>
                 
                 {%- else -%}
                 <div class="mt-4">
