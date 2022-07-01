@@ -11,7 +11,6 @@ gallery: true
     </ul>
 
     <div class="row">
-        {% include image/iiif-viewer.html %}
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
@@ -25,6 +24,8 @@ gallery: true
                 </style>
                 
                 <p><small><a href="#" onclick="event.preventDefault(); document.getElementsByClassName('viewer')[0].classList.toggle('hidden');">Click to view full screen</a></small></p>
+                
+                {% include image/iiif-viewer.html %}
                 
                 {%- else -%}
                 <div class="mt-4">
