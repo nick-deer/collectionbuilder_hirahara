@@ -1,4 +1,4 @@
-<div id="openseadragon1" style="width: 800px; height: 1050px;"></div>
+<div id="openseadragon1" class="viewer" style="width: 800px; height: 1050px;"></div>
 
 {% capture image_base_uri %} https://content.libraries.wsu.edu/digital/iiif/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/{{ page.cdmid }}{% endif %}{% endcapture %}
 {% capture image_info %} {{ image_uri_base }}/info.json{% endcapture %}
