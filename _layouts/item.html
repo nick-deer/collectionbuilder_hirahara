@@ -14,6 +14,7 @@ gallery: true
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
+                {% include image/iiif-viewer.html %}
                 <div class="gallery-img" data-src="{% include image/large.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
